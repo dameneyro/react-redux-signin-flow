@@ -13,6 +13,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 // app.use(flash())
 
+app.use('/dist', express.static(path.resolve(__dirname, '../dist')))
+
 app.get('/', (req, res) => {
   res.status(200).set({'Content-Type': 'text/html'}).sendFile(path.resolve(__dirname, '../index.html'))
 })

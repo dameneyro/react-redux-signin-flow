@@ -12,7 +12,6 @@ const output = {
 };
 
 module.exports = {
-  mode: 'development',
   entry, output,
   devtool: "eval-source-map",
   module: {
