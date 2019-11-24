@@ -47,7 +47,7 @@ const VerificationDisplay = props => {
         Correct Information
       </button>
       <button className='sign-in' name='button' id='button' type='submit' onClick={props.createUser}>
-        Confirm Information
+        Confirm
       </button>
       </div>
       </div>

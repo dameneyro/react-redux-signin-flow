@@ -5,6 +5,7 @@ import App from '../../client/App.jsx';
 beforeEach(() => {
 });
 
+// this tests if the app is rendering the component
 describe('<App />', () => {
   const wrapper = shallow(<App />);
   it('renders the component', () => {

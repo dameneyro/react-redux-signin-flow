@@ -1,5 +1,4 @@
 import * as types from '../constants/actionTypes';
-import { useHistory } from 'react-router-dom';
 
 const initialState = {
   firstName: '',
@@ -76,7 +75,8 @@ const usersReducer = (state = initialState, action) => {
         alert('your passwords do not match');
       } else {
         let hasSubmitted = true;
-        //fetch request to app.post?
+
+        //with more time, this would be refactored to have the fetch request elsewhere. I was looking at Thunk to implement it, but didn't want to spend too much time onboarding a new tech, figured this would be fine for a quick take home
         fetch('/verification', {
           method: 'POST',
           headers: {
@@ -105,6 +105,7 @@ const usersReducer = (state = initialState, action) => {
 
       let hasConfirmed = true;
 
+      //same as above comment re: fetch in the reducer
       fetch('/confirmation', {
         method: 'POST',
         headers: {

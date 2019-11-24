@@ -15,7 +15,7 @@ userController.verifyUserInput = (req, res, next) => {
   // pool.query(`SELECT * FROM users WHERE username = '${username}'`, (error, result) => {
   //   if (error) throw error;
 
-  //   if (result.rowCount > 0) {
+  //   if (result) {
   //     console.log('username not available')
   //     res.redirect({ message: req.flash('The username you chose is not available') }, '/');
   //   } else return next();

@@ -7,10 +7,6 @@ module.exports = {
     "<rootDir>/setup/setupEnzyme.js"
   ],
 
-  testPathIgnorePatters: [
-    "<rootDir>/__tests__/setup/"
-  ],
-
   testMatch: [
     "**/__tests__/**/*.[jt]s?(x)", "**/?(*.)+(spec|test).[jt]s?(x)" 
   ],

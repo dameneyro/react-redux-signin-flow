@@ -1,5 +1,7 @@
 import * as types from '../constants/actionTypes'
 
+// I made separate actions for each input field. With more time, I'd probably consolidate them better into a single action that takes all the data as an object
+
 export const updateFirstName = (firstName) => ({
   type: types.UPDATE_FIRST,
   payload: firstName
